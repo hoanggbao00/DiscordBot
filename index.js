@@ -3,8 +3,8 @@ const { token } = require('./config.json');
 const { Player } = require('discord-player');
 
 const client = new Discord.Client({intents: ['GUILDS', 'GUILD_MESSAGES', 'GUILD_VOICE_STATES'],
-    allowedMentions: { parse: [], repliedUser: true
-}});
+    allowedMentions: { parse: [], repliedUser: false }
+});
 
 client.player = new Player(client);
 
